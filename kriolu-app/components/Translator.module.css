@@ -1,0 +1,169 @@
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--or);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+.section {
+  padding: var(--spacing-2xl);
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ecru);
+  margin-bottom: var(--spacing-lg);
+}
+
+.translateSection {
+  padding: var(--spacing-xl);
+  background: rgba(20, 29, 69, 0.6);
+  border: 2px solid var(--terre);
+  border-radius: 12px;
+}
+
+.inputWrapper {
+  margin-bottom: var(--spacing-lg);
+}
+
+.inputLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--or);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.detectBadge {
+  font-size: 11px;
+  background: rgba(201, 154, 60, 0.2);
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: var(--or);
+  font-weight: 600;
+}
+
+.resultLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--or);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+.resultBox {
+  background: var(--indigo);
+  color: var(--ecru);
+  border-radius: 8px;
+  padding: var(--spacing-lg);
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: italic;
+  line-height: 1.6;
+  border: 2px solid var(--or);
+  position: relative;
+}
+
+.resultBox:hover .saveIcon {
+  opacity: 1;
+}
+
+.resultText {
+  margin-bottom: var(--spacing-md);
+}
+
+.glossary {
+  font-size: 11px;
+  color: var(--or);
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.glossary strong {
+  color: var(--terre);
+  display: block;
+  margin-top: 4px;
+}
+
+.saveIcon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  background: rgba(201, 154, 60, 0.15);
+  border: 1.5px solid var(--or);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: all var(--transition-fast);
+  font-size: 16px;
+}
+
+.saveIcon:hover {
+  background: rgba(201, 154, 60, 0.3);
+}
+
+.saveIcon.saved {
+  background: var(--or);
+  opacity: 1;
+}
+
+.modalOverlay {
+  display: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--indigo-deep);
+  border: 2px solid var(--or);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  max-width: 400px;
+  width: 90%;
+}
+
+.modalOptions {
+  display: grid;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.modalOption {
+  background: var(--indigo);
+  border: 2px solid var(--terre);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--ecru-soft);
+  font-size: 13px;
+  transition: all var(--transition-fast);
+}
+
+.modalOption:hover {
+  background: var(--terre);
+  color: var(--ecru);
+}

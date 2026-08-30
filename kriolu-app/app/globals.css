@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@6..72,400;6..72,600;6..72,800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Panu di Terra Palette */
+  --indigo: #22306A;
+  --indigo-deep: #141D45;
+  --indigo-night: #0E1533;
+  --ecru: #F4EDDC;
+  --ecru-soft: #E9DFC6;
+  --coton: #FBF7EC;
+  --terre: #AE5127;
+  --or: #C99A3C;
+  --ink: #1C1914;
+  --brume: #847C68;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 60px;
+
+  /* Transitions */
+  --transition-fast: 120ms;
+  --transition-normal: 200ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Public Sans', system-ui, -apple-system, sans-serif;
+  background: var(--indigo-night);
+  color: var(--ecru);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+button {
+  font-family: 'Public Sans', system-ui, sans-serif;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+input, textarea {
+  font-family: 'Public Sans', system-ui, sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Utilities */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--or);
+  font-weight: 700;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.divider {
+  border-top: 2px solid var(--or);
+  margin: var(--spacing-2xl) 0;
+}

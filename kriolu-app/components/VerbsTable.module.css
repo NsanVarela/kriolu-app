@@ -1,0 +1,88 @@
+.section {
+  padding: var(--spacing-2xl);
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--or);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ecru);
+  margin-bottom: var(--spacing-lg);
+}
+
+.verbsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.verbsTable th {
+  background: var(--indigo);
+  color: var(--or);
+  padding: var(--spacing-md);
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid var(--or);
+}
+
+.verbsTable td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--terre);
+  color: var(--ecru-soft);
+}
+
+.verbsTable tr:nth-child(even) {
+  background: rgba(174, 81, 39, 0.15);
+}
+
+.verbName {
+  font-family: 'Fraunces', serif;
+  color: var(--or);
+  font-weight: 600;
+}
+
+.conjugation {
+  font-family: 'Fraunces', serif;
+  color: var(--ecru);
+  font-size: 11px;
+}
+
+.note {
+  background: rgba(201, 154, 60, 0.1);
+  border-left: 3px solid var(--or);
+  padding: var(--spacing-md);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: var(--ecru-soft);
+  line-height: 1.6;
+}
+
+.note code {
+  background: rgba(174, 81, 39, 0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fraunces', serif;
+  color: var(--or);
+}
+
+@media (max-width: 900px) {
+  .verbsTable {
+    font-size: 11px;
+  }
+
+  .verbsTable th,
+  .verbsTable td {
+    padding: var(--spacing-sm);
+  }
+}

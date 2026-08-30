@@ -1,0 +1,99 @@
+.section {
+  padding: var(--spacing-2xl);
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--or);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ecru);
+  margin-bottom: var(--spacing-lg);
+}
+
+.categoryTabs {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-md);
+}
+
+.categoryTab {
+  background: var(--indigo);
+  border: 2px solid var(--terre);
+  color: var(--ecru-soft);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.categoryTab:hover {
+  border-color: var(--or);
+}
+
+.categoryTab.active {
+  background: var(--terre);
+  border-color: var(--or);
+  color: var(--ecru);
+}
+
+.phraseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.phraseCard {
+  background: var(--indigo);
+  border: 2px solid var(--or);
+  border-radius: 8px;
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.phraseCard:hover {
+  transform: translateY(-4px);
+}
+
+.phraseCategory {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--terre);
+  letter-spacing: 0.08em;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.phraseKr {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--or);
+  margin-bottom: var(--spacing-md);
+}
+
+.phraseFr {
+  font-size: 12px;
+  color: var(--ecru-soft);
+}
+
+@media (max-width: 900px) {
+  .phraseGrid {
+    grid-template-columns: 1fr;
+  }
+}
