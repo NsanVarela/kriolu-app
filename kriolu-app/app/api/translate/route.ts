@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
           role: 'user',
           content: `Traduis ceci de kriolu badiu en français: "${text}"\n\nRéponds UNIQUEMENT avec la traduction française, rien d'autre.`,
         },
-      ],
+      ]
     })
 
     const translatedText = message.content[0].type === 'text' ? message.content[0].text : ''
